@@ -11,6 +11,13 @@ public class Connection$Proxy implements Connection {
     public Connection$Proxy(Connection connection) {
         this.connection = connection;
     }
+    public void remCon() throws SQLException {
+        this.close();
+    }
+
+/*    public void realClose() throws SQLException {
+       this.close();
+    }*/
 
     @Override
     public Statement createStatement() throws SQLException {

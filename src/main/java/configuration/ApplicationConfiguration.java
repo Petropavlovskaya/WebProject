@@ -11,8 +11,8 @@ public enum ApplicationConfiguration {
     private String dbUrl;
     private String dbUser;
     private String dbPassword;
-    private int initPoolSize = 12;
-    private int maxPoolSize = 30;
+    private int initPoolSize = 3;
+    private int maxPoolSize = 6;
     private int poolIncreaseStep = 2;
 
     ApplicationConfiguration() {
